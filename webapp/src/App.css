@@ -1,8 +1,26 @@
 #root {
   max-width: 1280px;
+  min-height: 200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.difficultySelect {
+  grid-column-start: 3;
+  text-align: center;
+}
+
+option {
+  text-align: center;
+}
+
+.startButton {
+ grid-column-start: 3;
+ grid-row-start: 3
 }
 
 .logo {
