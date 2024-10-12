@@ -1,14 +1,18 @@
 import './App.css'
-import { CountButton } from './CountButton'
+// import { CountButton } from './CountButton'
 import { DropdownList } from './DropDown'
 import { useState, useEffect } from 'react'
-import axios from 'axios'
+import api from './api/posts'
 
 export default function App() {
-  const [window, setWindow] = useState(<TempWindow/>)
+  const [window, setWindow] = useState(<StartMenu/>)
   const [note, setNote] = useState('E')
 
-  function TempWindow () {
+  useEffect(() => {
+    console.log(note)
+  }, [note])
+
+  function StartMenu () {
     return (
       <>
         <DropdownList />
@@ -16,15 +20,31 @@ export default function App() {
       </>
     )
   }
-
-  useEffect(() => {
-    axios.get('/api').then(res => setNote(res.data))
-  }, [])
-
+  
   function handleStart() {
-    setWindow(() => {
-      return note
-    })
+    const fetchNotes = async () => {
+      try{
+        const response = await api.get("/api/fretboard");
+        // no need for catch here - if we have gotten this far, response is in the 200 range
+        setWindow(response.data);
+      } catch (err) {
+        if (err.response) {
+          // defined errors not in the 200 response range
+          console.log(err.response.data);
+          console.log(err.response.status);
+          console.log(err.response.hearders);
+        } else {
+          // undefined errors
+          console.log(`Error: ${err.message}`);
+        }
+      }
+    }
+
+    fetchNotes()
+    setNote('F')
+    // axios.get("api/fretboard").then(res => setNote(res.data))
+    // console.log(note)
+    // axios.get('/api').then(res => console.log(res.data))
   }
 
   return (
