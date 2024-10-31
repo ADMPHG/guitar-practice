@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 import json
 import random
 
-f = open('data/fretBoard.json')
+f = open('data/fretBoard.json', 'r')
 
 fretboard = json.load(f)
 

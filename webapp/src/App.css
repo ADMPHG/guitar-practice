@@ -20,7 +20,12 @@ option {
 
 .startButton {
  grid-column-start: 3;
- grid-row-start: 3
+ grid-row-start: 3;
+}
+
+.noteButton {
+  grid-column-start: 3;
+  grid-row-start: 4;
 }
 
 .logo {
