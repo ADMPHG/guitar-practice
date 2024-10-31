@@ -6,17 +6,26 @@ import { useState, useEffect } from 'react'
 import api from './api/posts'
 
 export default function App() {
-  // const [window, setWindow] = useState(<StartMenu/>)
+  const [showRandomNote, setShowRandomNote] = useState(false)
 
   function HandleStart() {
     console.log('it\'s dead jim')
+    setShowRandomNote(true)
+    return <RandomNote />
   }
 
-  return (
+  function StartMenu () {
+    return (
     <>
       <DropdownList />
       <button className="startButton" onClick={HandleStart}>Start</button>
-      <RandomNote />
     </>
+    )
+  }
+
+  return (
+    <div className="startMenu">
+      {showRandomNote ? <RandomNote /> : <StartMenu />}
+    </div> 
   )
 }
