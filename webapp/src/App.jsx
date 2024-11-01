@@ -11,7 +11,11 @@ export default function App() {
   function HandleStart() {
     console.log('it\'s dead jim')
     setShowRandomNote(true)
-    return <RandomNote />
+    // return <RandomNote />
+  }
+
+  function HandleBack() {
+    setShowRandomNote(false)
   }
 
   function StartMenu () {
@@ -24,8 +28,13 @@ export default function App() {
   }
 
   return (
-    <div className="startMenu">
-      {showRandomNote ? <RandomNote /> : <StartMenu />}
-    </div> 
+    <>
+      <div className="startMenu">
+        {showRandomNote ? <RandomNote /> : <StartMenu />}
+      </div>
+      <div>
+        {showRandomNote && <button onClick={HandleBack}>Back</button>}
+      </div>
+    </>
   )
 }
