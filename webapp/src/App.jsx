@@ -1,9 +1,8 @@
 import './App.css'
 // import { CountButton } from './CountButton'
 import DropdownList from './DropDown'
-import RandomNote from './RandomNote'
-import { useState, useEffect } from 'react'
-import api from './api/posts'
+import RandNoteButton from './RandNoteButton'
+import { useState } from 'react'
 
 export default function App() {
   const [showRandomNote, setShowRandomNote] = useState(false)
@@ -11,7 +10,6 @@ export default function App() {
   function HandleStart() {
     console.log('it\'s dead jim')
     setShowRandomNote(true)
-    // return <RandomNote />
   }
 
   function HandleBack() {
@@ -30,9 +28,9 @@ export default function App() {
   return (
     <>
       <div className="startMenu">
-        {showRandomNote ? <RandomNote /> : <StartMenu />}
+        {showRandomNote ? <RandNoteButton /> : <StartMenu />}
       </div>
-      <div>
+      <div className='backButton'>
         {showRandomNote && <button onClick={HandleBack}>Back</button>}
       </div>
     </>
