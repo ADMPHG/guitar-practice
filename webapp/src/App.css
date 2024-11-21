@@ -11,17 +11,19 @@
 
 .startMenu {
   grid-column-start: 3;
+  grid-row-start: 3;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .difficultySelect {
   grid-row-start: 3;
+  grid-column-start: 3;
   text-align: center;
 }
 
 .backButton {
-  grid-row-start: 5;
+  grid-row-start: 4;
   grid-column-start: 3;
 }
 
@@ -31,7 +33,7 @@ option {
 
 .startButton {
  grid-column-start: 3;
- grid-row-start: 3;
+ grid-row-start: 5;
 }
 
 .noteButton {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import api from './api/posts';
 
-function RandNoteButton() {
+function RandNoteButton(difficulty) {
   const [data, setData] = useState(null);
 
   const handleClick = async () => {

@@ -2,24 +2,33 @@ import './App.css'
 // import { CountButton } from './CountButton'
 import DropdownList from './DropDown'
 import RandNoteButton from './RandNoteButton'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function App() {
   const [showRandomNote, setShowRandomNote] = useState(false)
+  const [difficulty, setDifficulty] = useState('Select Difficulty')
 
+  useEffect (() => {
+    console.log(difficulty)
+  })
+  
   function HandleStart() {
-    console.log('it\'s dead jim')
     setShowRandomNote(true)
+    setDifficulty()
+  }
+
+  function handleSelectionChange(value) {
+    setDifficulty(value);
   }
 
   function HandleBack() {
     setShowRandomNote(false)
   }
 
-  function StartMenu () {
+  function StartMenu() {
     return (
     <>
-      <DropdownList />
+      <DropdownList difficulty={difficulty} changeDifficulty={handleSelectionChange} />
       <button className="startButton" onClick={HandleStart}>Start</button>
     </>
     )
@@ -28,9 +37,11 @@ export default function App() {
   return (
     <>
       <div className="startMenu">
-        {showRandomNote ? <RandNoteButton /> : <StartMenu />}
+        {/*Using a ternary to conditionally render components*/}
+        {showRandomNote ? <RandNoteButton difficulty={difficulty} /> : <StartMenu />}
       </div>
       <div className='backButton'>
+        {/*Using a logical && to conditionally render the back button*/}
         {showRandomNote && <button onClick={HandleBack}>Back</button>}
       </div>
     </>
