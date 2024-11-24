@@ -29,7 +29,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= "*", # origins,
+    allow_origins= "*", # origins, # currently set to wildcard because it wouldn't work otherwise
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,10 +39,10 @@ app.add_middleware(
 async def read_root():
     return "Hello World"
 
-@app.get("/api/fretboard")
+@app.get("/api/fretboard/Easy")
 async def read_fretboard():
     randInt = random.randint(0,17)
-    return fretboard['fretboard'][randInt]['note']
+    return fretboard['easy'][randInt]['note']
 
 # @app.get("/api/notes/easy")
 # async def root():

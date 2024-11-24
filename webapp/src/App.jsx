@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css'
 // import { CountButton } from './CountButton'
 import DropdownList from './DropDown'
@@ -14,7 +15,6 @@ export default function App() {
   
   function HandleStart() {
     setShowRandomNote(true)
-    setDifficulty()
   }
 
   function handleSelectionChange(value) {

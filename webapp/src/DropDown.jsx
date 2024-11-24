@@ -1,5 +1,7 @@
-// Creating a function to track the changes in DropDown List
-export default function DropdownList( { difficulty, changeDifficulty } ) { 
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function DropdownList( { difficulty, changeDifficulty } ) { 
    // changeDifficulty function is passed down as a prop for the onChange functionality of the list
    // difficulty is stored in state in the parent component
    const handleChange = (event) => {
@@ -14,3 +16,10 @@ export default function DropdownList( { difficulty, changeDifficulty } ) {
       </select>
    );
 }
+
+DropdownList.propTypes = {
+   difficulty: PropTypes.string.isRequired,
+   changeDifficulty: PropTypes.func.isRequired
+}
+
+export default DropdownList;

@@ -1,112 +1,94 @@
 {
-    "fretboard":[
+    "easy":[
         {
             "note":"E",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"F",
             "string":"E",
-            ">12thFret":false,
-            "difficulty": "easy"
+            ">12thFret":false
         },
         {
             "note":"F#",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"G",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"G#",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"A",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"A#",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"B",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"C",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"C#",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"D",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"D#",
             "string":"E",
-            ">12thFret": false,
-            "difficulty": "easy"
+            ">12thFret": false
         },
         {
             "note":"E",
             "string":"E",
-            ">12thFret": true,
-            "difficulty": "easy"
+            ">12thFret": true
         },
         {
             "note":"F",
             "string":"E",
-            ">12thFret": true,
-            "difficulty": "easy"
+            ">12thFret": true
         },
         {
             "note":"F#",
             "string":"E",
-            ">12thFret": true,
-            "difficulty": "easy"
+            ">12thFret": true
         },
         {
             "note":"G",
             "string":"E",
-            ">12thFret": true,
-            "difficulty": "easy"
+            ">12thFret": true
         },
         {
             "note":"G#",
             "string":"E",
-            ">12thFret": true,
-            "difficulty": "easy"
+            ">12thFret": true
         },
         {
             "note":"A",
             "string":"E",
-            ">12thFret": true,
-            "difficulty": "easy"
+            ">12thFret": true
         }
     ]
 }
