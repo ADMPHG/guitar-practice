@@ -1,5 +1,5 @@
 {
-    "easy":[
+    "6thString":[
         {
             "note":"E",
             "string":"E",
@@ -89,6 +89,281 @@
             "note":"A",
             "string":"E",
             ">12thFret": true
+        }],
+    "5thString":[
+        {
+            "note":"A",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"A#",
+            "string":"A",
+            ">12thFret":false
+        },
+        {
+            "note":"B",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"C",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"C#",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"D",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"D#",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"E",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"F",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"F#",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"G",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"G#",
+            "string":"A",
+            ">12thFret": false
+        },
+        {
+            "note":"A",
+            "string":"A",
+            ">12thFret": true
+        },
+        {
+            "note":"A#",
+            "string":"A",
+            ">12thFret": true
+        },
+        {
+            "note":"B",
+            "string":"A",
+            ">12thFret": true
+        },
+        {
+            "note":"C",
+            "string":"A",
+            ">12thFret": true
+        },
+        {
+            "note":"C#",
+            "string":"A",
+            ">12thFret": true
+        },
+        {
+            "note":"D",
+            "string":"A",
+            ">12thFret": true
         }
+    ],
+    "4thString":[
+        {
+            "note":"D",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"D#",
+            "string":"D",
+            ">12thFret":false
+        },
+        {
+            "note":"E",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"F",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"F#",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"G",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"G#",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"A",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"A#",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"B",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"C",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"C#",
+            "string":"D",
+            ">12thFret": false
+        },
+        {
+            "note":"D",
+            "string":"D",
+            ">12thFret": true
+        },
+        {
+            "note":"D#",
+            "string":"D",
+            ">12thFret": true
+        },
+        {
+            "note":"E",
+            "string":"D",
+            ">12thFret": true
+        },
+        {
+            "note":"F",
+            "string":"D",
+            ">12thFret": true
+        },
+        {
+            "note":"F#",
+            "string":"D",
+            ">12thFret": true
+        },
+        {
+            "note":"G",
+            "string":"D",
+            ">12thFret": true
+        }
+    ],
+    "3rdString": [
+    {
+        "note": "G",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "G#",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "A",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "A#",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "B",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "C",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "C#",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "D",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "D#",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "E",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "F",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "F#",
+        "string": "G",
+        ">12thFret": false
+    },
+    {
+        "note": "G",
+        "string": "G",
+        ">12thFret": true
+    },
+    {
+        "note": "G#",
+        "string": "G",
+        ">12thFret": true
+    },
+    {
+        "note": "A",
+        "string": "G",
+        ">12thFret": true
+    },
+    {
+        "note": "A#",
+        "string": "G",
+        ">12thFret": true
+    },
+    {
+        "note": "B",
+        "string": "G",
+        ">12thFret": true
+    },
+    {
+        "note": "C",
+        "string": "G",
+        ">12thFret": true
+    }
     ]
 }

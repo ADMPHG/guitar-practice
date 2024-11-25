@@ -35,18 +35,29 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Dictionary used to convert the randomly selected int to a string for JSON lookup
+stringDict = {
+    0: "6thString",
+    1: "5thString",
+    2: "4thString",
+    3: "3rdString"
+}
+
 @app.get("/")
 async def read_root():
     return "Hello World"
 
 @app.get("/api/fretboard/Easy")
 async def read_fretboard():
+    stringNum = random.randint(0,1)
     randInt = random.randint(0,17)
-    return fretboard['easy'][randInt]['note']
+    return fretboard[stringDict[stringNum]][randInt]['note']
 
-# @app.get("/api/notes/easy")
-# async def root():
-#     return
+@app.get("/api/fretboard/Medium")
+async def read_fretboard():
+    stringNum = random.randint(0,3)
+    randInt = random.randint(0,17)
+    return fretboard[stringDict[stringNum]][randInt]['note']
 
 # FIXME this should serve fretboard.json as a static file to avoid the CORS issue but it doesn't
 # Possible directory path issue? Test further

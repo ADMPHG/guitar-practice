@@ -5,7 +5,17 @@ import api from './api/posts';
 function RandNoteButton(difficulty) {
   const [data, setData] = useState(null);
 
-  let apiRoute = "/api/fretboard/" + difficulty.difficulty
+  const apiRoute = "/api/fretboard/" + difficulty.difficulty
+
+  const setDelay = (difficulty) => {
+    switch (difficulty) {
+      case "Easy": return 3000;
+      case "Medium": return 2000;
+      case "Hard": return 1000;
+      default: return 2000;
+  }};
+
+  const delay = setDelay(difficulty); // set delay based on selected difficulty
 
   // TODO Loop should terminate early if error encountered
   const handleClick = async () => {
@@ -24,7 +34,7 @@ function RandNoteButton(difficulty) {
             console.log(`Error: ${err.message}`);
         }
       }
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, delay));
     }
   };
 
