@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import api from './api/posts';
 
 function RandNoteButton(difficulty) {
@@ -8,7 +8,7 @@ function RandNoteButton(difficulty) {
   const apiRoute = "/api/fretboard/" + difficulty.difficulty
 
   const setDelay = (difficulty) => {
-    switch (difficulty) {
+    switch (difficulty.difficulty) {
       case "Easy": return 3000;
       case "Medium": return 2000;
       case "Hard": return 1000;
@@ -16,6 +16,10 @@ function RandNoteButton(difficulty) {
   }};
 
   const delay = setDelay(difficulty); // set delay based on selected difficulty
+
+  useEffect (() => {
+    console.log(delay)
+  })
 
   // TODO Loop should terminate early if error encountered
   const handleClick = async () => {
@@ -41,7 +45,8 @@ function RandNoteButton(difficulty) {
   return (
     <div>
       {data == null && <button onClick={handleClick}>Begin</button>}
-      {data && <div>{data}</div>}
+      {data && <div>Note: {data.note}</div>}
+      {data && <div>String: {data.string}</div>}
     </div>
   );
 }

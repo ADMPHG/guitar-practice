@@ -40,7 +40,9 @@ stringDict = {
     0: "6thString",
     1: "5thString",
     2: "4thString",
-    3: "3rdString"
+    3: "3rdString",
+    4: "5thString",
+    5: "6thString"
 }
 
 @app.get("/")
@@ -51,13 +53,19 @@ async def read_root():
 async def read_fretboard():
     stringNum = random.randint(0,1)
     randInt = random.randint(0,17)
-    return fretboard[stringDict[stringNum]][randInt]['note']
+    return fretboard[stringDict[stringNum]][randInt]
 
 @app.get("/api/fretboard/Medium")
 async def read_fretboard():
     stringNum = random.randint(0,3)
     randInt = random.randint(0,17)
-    return fretboard[stringDict[stringNum]][randInt]['note']
+    return fretboard[stringDict[stringNum]][randInt]
+
+@app.get("/api/fretboard/Hard")
+async def read_fretboard():
+    stringNum = random.randint(0,5)
+    randInt = random.randint(0,17)
+    return fretboard[stringDict[stringNum]][randInt]
 
 # FIXME this should serve fretboard.json as a static file to avoid the CORS issue but it doesn't
 # Possible directory path issue? Test further
