@@ -46,6 +46,7 @@ function RandNoteButton(difficulty) {
     <div>
       {data == null && <button onClick={handleClick}>Begin</button>}
       {data && <div>Note: {data.note}</div>}
+      {data && data.above12thFret && (<div>^12th Fret^</div>)}
       {data && <div>String: {data.string}</div>}
     </div>
   );

@@ -3,551 +3,551 @@
         {
             "note":"E",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"F",
             "string":"E",
-            ">12thFret":false
+            "above12thFret":false
         },
         {
             "note":"F#",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"G",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"G#",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"A",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"A#",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"B",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"C",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"C#",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"D",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"D#",
             "string":"E",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"E",
             "string":"E",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"F",
             "string":"E",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"F#",
             "string":"E",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"G",
             "string":"E",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"G#",
             "string":"E",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"A",
             "string":"E",
-            ">12thFret": true
+            "above12thFret": true
         }],
     "5thString":[
         {
             "note":"A",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"A#",
             "string":"A",
-            ">12thFret":false
+            "above12thFret":false
         },
         {
             "note":"B",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"C",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"C#",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"D",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"D#",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"E",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"F",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"F#",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"G",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"G#",
             "string":"A",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"A",
             "string":"A",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"A#",
             "string":"A",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"B",
             "string":"A",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"C",
             "string":"A",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"C#",
             "string":"A",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"D",
             "string":"A",
-            ">12thFret": true
+            "above12thFret": true
         }
     ],
     "4thString":[
         {
             "note":"D",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"D#",
             "string":"D",
-            ">12thFret":false
+            "above12thFret":false
         },
         {
             "note":"E",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"F",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"F#",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"G",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"G#",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"A",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"A#",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"B",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"C",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"C#",
             "string":"D",
-            ">12thFret": false
+            "above12thFret": false
         },
         {
             "note":"D",
             "string":"D",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"D#",
             "string":"D",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"E",
             "string":"D",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"F",
             "string":"D",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"F#",
             "string":"D",
-            ">12thFret": true
+            "above12thFret": true
         },
         {
             "note":"G",
             "string":"D",
-            ">12thFret": true
+            "above12thFret": true
         }
     ],
     "3rdString": [
     {
         "note": "G",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "G#",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "A",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "A#",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "B",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "C",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "C#",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "D",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "D#",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "E",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "F",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "F#",
         "string": "G",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "G",
         "string": "G",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "G#",
         "string": "G",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "A",
         "string": "G",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "A#",
         "string": "G",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "B",
         "string": "G",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "C",
         "string": "G",
-        ">12thFret": true
+        "above12thFret": true
     }
     ],
     "2ndString": [
     {
         "note": "B",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "C",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "C#",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "D",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "D#",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "E",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "F",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "F#",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "G",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "G#",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "A",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "A#",
         "string": "B",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "B",
         "string": "B",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "C",
         "string": "B",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "C#",
         "string": "B",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "D",
         "string": "B",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "D#",
         "string": "B",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "E",
         "string": "B",
-        ">12thFret": true
+        "above12thFret": true
     }
 ],
 "1stString": [
     {
         "note": "E",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "F",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "F#",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "G",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "G#",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "A",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "A#",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "B",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "C",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "C#",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "D",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "D#",
         "string": "E",
-        ">12thFret": false
+        "above12thFret": false
     },
     {
         "note": "E",
         "string": "E",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "F",
         "string": "E",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "F#",
         "string": "E",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "G",
         "string": "E",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "G#",
         "string": "E",
-        ">12thFret": true
+        "above12thFret": true
     },
     {
         "note": "A",
         "string": "E",
-        ">12thFret": true
+        "above12thFret": true
     }
 ]
 }
