@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 
 export default function App() {
   const [showRandomNote, setShowRandomNote] = useState(false)
-  const [difficulty, setDifficulty] = useState('Select Difficulty')
+  const [difficulty, setDifficulty] = useState('select')
 
   useEffect (() => {
     console.log(difficulty)
@@ -29,7 +29,7 @@ export default function App() {
     return (
     <>
       <DropdownList difficulty={difficulty} changeDifficulty={handleSelectionChange} />
-      <button className="startButton" onClick={HandleStart}>Start</button>
+      {difficulty != 'select' && <button className="startButton" onClick={HandleStart}>Start</button>}
     </>
     )
   }
