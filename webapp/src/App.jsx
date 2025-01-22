@@ -1,29 +1,29 @@
-import React from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
 // import { CountButton } from './CountButton'
-import DropdownList from './DropDown'
-import RandNoteButton from './RandNoteButton'
-import { useState, useEffect } from 'react'
+import DropdownList from './DropDown';
+import RandNoteButton from './RandNoteButton';
+import { useState, useEffect } from 'react';
 
 export default function App() {
-  const [showRandomNote, setShowRandomNote] = useState(false)
-  const [difficulty, setDifficulty] = useState('select')
+  const [showRandomNote, setShowRandomNote] = useState(false);
+  const [difficulty, setDifficulty] = useState('select');
 
   useEffect (() => {
-    console.log(difficulty)
-  })
+    console.log(difficulty);
+  });
   
   function HandleStart() {
-    setShowRandomNote(true)
-  }
+    setShowRandomNote(true);
+  };
 
   function handleSelectionChange(value) {
     setDifficulty(value);
-  }
+  };
 
   function HandleBack() {
-    setShowRandomNote(false)
-  }
+    setShowRandomNote(false);
+  };
 
   function StartMenu() {
     return (
@@ -32,7 +32,7 @@ export default function App() {
       {difficulty != 'select' && <button className="startButton" onClick={HandleStart}>Start</button>}
     </>
     )
-  }
+  };
 
   return (
     <>
@@ -45,5 +45,5 @@ export default function App() {
         {showRandomNote && <button onClick={HandleBack}>Back</button>}
       </div>
     </>
-  )
+  );
 }

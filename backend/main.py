@@ -1,8 +1,10 @@
 from fastapi import FastAPI
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import json
 import random
+import os
 
 f = open('data/fretBoard.json', 'r')
 
@@ -10,7 +12,7 @@ fretboard = json.load(f)
 
 app = FastAPI()
 
-# FIXME CORS blocks get request to http://localhost:8000/api/fretboard when using this origins list.
+# FIXME CORS blocks get request to http://localhost:8000/api/fretboard when using this origins list
 # Works fine when using wildcard to allow all origins. No ideal what's going on.
 origins = [
     "localhost:8000",
@@ -66,6 +68,14 @@ async def read_fretboard():
     stringNum = random.randint(0,5)
     randInt = random.randint(0,17)
     return fretboard[stringDict[stringNum]][randInt]
+
+@app.get("/api/wavfile")
+def get_wav_file():
+    file_path = "data/test.wav"
+    if os.path.exists(file_path):
+        return FileResponse(file_path, media_type='audio/wav', filename="test.wav")
+    else:
+        return {"error": "File not found"}
 
 # FIXME this should serve fretboard.json as a static file to avoid the CORS issue but it doesn't
 # Possible directory path issue? Test further

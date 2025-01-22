@@ -20,6 +20,6 @@ function DropdownList( { difficulty, changeDifficulty } ) {
 DropdownList.propTypes = {
    difficulty: PropTypes.string.isRequired,
    changeDifficulty: PropTypes.func.isRequired
-}
+};
 
 export default DropdownList;

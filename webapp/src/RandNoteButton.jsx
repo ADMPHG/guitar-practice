@@ -1,14 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import api from './api/posts';
-import sound from './test.wav'
 
 function RandNoteButton(difficulty) {
-  const [data, setData] = useState(null); // stores note returned from the API call
-  const [audio, setAudio] = useState(null)
+  const [noteData, setNoteData] = useState(null); // stores note returned from the API call
 
   // modifies API route to match user selected difficulty
-  const apiRoute = "/api/fretboard/" + difficulty.difficulty
+  const noteUrl = "/api/fretboard/" + difficulty.difficulty;
 
   // Delay = how long before next note is displayed to user in the loop
   // Delay is set based on difficulty
@@ -24,21 +22,38 @@ function RandNoteButton(difficulty) {
   const delay = setDelay(difficulty); // set delay based on selected difficulty
 
   useEffect (() => {
-    console.log(delay)
-  })
+    console.log(delay);
+  });
 
-  function playAudio() {
-    new Audio(sound).play()
-  }
+  // GET request to retrieve a .wav file, then play it
+  const fetchWavFile = async () => {
+    try {
+        const response = await api.get('/api/wavfile', {
+            responseType: 'arraybuffer'
+        });
+
+        // Convert the response data to a Blob
+        const blob = new Blob([response.data], { type: 'audio/wav' });
+
+        // Create a URL for the Blob
+        const url = window.URL.createObjectURL(blob);
+
+        // Create an audio element and set its source to the Blob URL
+        const audio = new Audio(url);
+        audio.play();
+    } catch (error) {
+        console.error('Error fetching the .wav file:', error);
+    }
+};
 
   // TODO Loop should terminate early if error encountered
   // TODO Loop currently iterates 20 times - change this?
   const handleClick = async () => {
     for (let i = 0; i < 20; i++) {
       try {
-        const response = await api.get(apiRoute);
-        setData(response.data);
-        playAudio()
+        const response = await api.get(noteUrl);
+        setNoteData(response.data);
+        fetchWavFile();
       } catch (err) {
         if (err.response) {
             // defined errors not in the 200 response range
@@ -49,9 +64,9 @@ function RandNoteButton(difficulty) {
             // undefined errors
             console.log(`Error: ${err.message}`);
         }
-      }
+      };
       await new Promise(resolve => setTimeout(resolve, delay));
-    }
+    };
   };
 
   // Returned JSX
@@ -63,12 +78,12 @@ function RandNoteButton(difficulty) {
 
   return (
     <div>
-      {data == null && <button onClick={handleClick}>Begin</button>}
-      {data && <div>Note: {data.note}</div>}
-      {data && data.above12thFret && (<div>^12th Fret^</div>)}
-      {data && <div>String: {data.string}</div>}
+      {noteData == null && <button onClick={handleClick}>Begin</button>}
+      {noteData && <div>Note: {noteData.note}</div>}
+      {noteData && noteData.above12thFret && (<div>^12th Fret^</div>)}
+      {noteData && <div>String: {noteData.string}</div>}
     </div>
   );
-}
+};
 
 export default RandNoteButton;
