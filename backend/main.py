@@ -69,11 +69,11 @@ async def read_fretboard():
     randInt = random.randint(0,17)
     return fretboard[stringDict[stringNum]][randInt]
 
-@app.get("/api/wavfile")
-def get_wav_file():
-    file_path = "data/test.wav"
+@app.get("/api/audio/<wavfile>")
+def get_wav_file(wavfilename):
+    file_path = "data/audio/" + wavfilename + ".wav"
     if os.path.exists(file_path):
-        return FileResponse(file_path, media_type='audio/wav', filename="test.wav")
+        return FileResponse(file_path, media_type='audio/wav', filename=wavfilename + ".wav")
     else:
         return {"error": "File not found"}
 

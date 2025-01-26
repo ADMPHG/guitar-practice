@@ -22,13 +22,21 @@ function RandNoteButton(difficulty) {
   const delay = setDelay(difficulty); // set delay based on selected difficulty
 
   useEffect (() => {
-    console.log(delay);
+    console.log(noteData);
   });
 
+  // Once note data is retrieved from the server, fetch the corresponding .wav file
+  // effect is needed to ensure the GET request is made after the noteData state has been updated
+  useEffect (() => {
+    if (noteData) {
+      fetchWavFile(noteData.audioFilePath);
+    }
+  }, [noteData]);
+
   // GET request to retrieve a .wav file, then play it
-  const fetchWavFile = async () => {
+  const fetchWavFile = async (audioUrl) => {
     try {
-        const response = await api.get('/api/wavfile', {
+        const response = await api.get('/api/audio/<wavfile>?wavfilename=' + audioUrl, {
             responseType: 'arraybuffer'
         });
 
@@ -53,7 +61,6 @@ function RandNoteButton(difficulty) {
       try {
         const response = await api.get(noteUrl);
         setNoteData(response.data);
-        fetchWavFile();
       } catch (err) {
         if (err.response) {
             // defined errors not in the 200 response range

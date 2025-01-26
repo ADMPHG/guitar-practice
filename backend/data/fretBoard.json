@@ -3,183 +3,219 @@
         {
             "note":"E",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringE"
         },
         {
             "note":"F",
             "string":"E",
-            "above12thFret":false
+            "above12thFret":false,
+            "audioFilePath": "6thStringF"
         },
         {
             "note":"F#",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringFSharp"
         },
         {
             "note":"G",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringG"
         },
         {
             "note":"G#",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringGSharp"
         },
         {
             "note":"A",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringA"
         },
         {
             "note":"A#",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringASharp"
         },
         {
             "note":"B",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringB"
         },
         {
             "note":"C",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringC"
         },
         {
             "note":"C#",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringCSharp"
         },
         {
             "note":"D",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringD"
         },
         {
             "note":"D#",
             "string":"E",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "6thStringDSharp"
         },
         {
             "note":"E",
             "string":"E",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "6thStringE12"
         },
         {
             "note":"F",
             "string":"E",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "6thStringF12"
         },
         {
             "note":"F#",
             "string":"E",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "6thStringFSharp12"
         },
         {
             "note":"G",
             "string":"E",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "6thStringG12"
         },
         {
             "note":"G#",
             "string":"E",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "6thStringGSharp12"
         },
         {
             "note":"A",
             "string":"E",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "6thStringA12"
         }],
     "5thString":[
         {
             "note":"A",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringA"
         },
         {
             "note":"A#",
             "string":"A",
-            "above12thFret":false
+            "above12thFret":false,
+            "audioFilePath": "5thStringASharp"
         },
         {
             "note":"B",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringB"
         },
         {
             "note":"C",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringC"
         },
         {
             "note":"C#",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringCSharp"
         },
         {
             "note":"D",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringD"
         },
         {
             "note":"D#",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringDSharp"
         },
         {
             "note":"E",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringE"
         },
         {
             "note":"F",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringF"
         },
         {
             "note":"F#",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringFSharp"
         },
         {
             "note":"G",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringG"
         },
         {
             "note":"G#",
             "string":"A",
-            "above12thFret": false
+            "above12thFret": false,
+            "audioFilePath": "5thStringGSharp"
         },
         {
             "note":"A",
             "string":"A",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "5thStringA12"
         },
         {
             "note":"A#",
             "string":"A",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "5thStringASharp12"
         },
         {
             "note":"B",
             "string":"A",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "5thStringB12"
         },
         {
             "note":"C",
             "string":"A",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "5thStringC12"
         },
         {
             "note":"C#",
             "string":"A",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "5thStringCSharp12"
         },
         {
             "note":"D",
             "string":"A",
-            "above12thFret": true
+            "above12thFret": true,
+            "audioFilePath": "5thStringD12"
         }
     ],
     "4thString":[
